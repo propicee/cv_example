@@ -1,0 +1,262 @@
+/*   background */
+.background {
+  background-image: url(images/evergreen.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/*     navigation bar*/
+.wtf {
+  width: -150% 100%;
+}
+/*  navigation bar buttons  */
+.navbar {
+  background-color: ;
+  display: inline-block;
+  padding: 20px 40px;
+}
+/* navigation bar background*/
+.topnav {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* somehow related to nav bar*/
+.table {
+  background-color: rgba(223,207,200,0.5); /*check the opacity*/
+  background-size: 500px 100px;
+  width: 80%;
+}
+.flags {
+  border-radius: 100px;
+
+  }
+/*    for tables  */
+.skills {
+  background-color: rgba(228,221,217);
+  background-size: 500px 100px;
+  height: 1px;
+  background-repeat: no-repeat;
+}
+
+
+.para {padding: inherit;
+  border: 1px;
+  background-color: rgba(228,221,217, 0.5);
+  border-radius: 25px;
+}
+.fonts {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+
+}
+
+.paragraph {
+  padding: inherit;
+  border: 1px;
+  background-color: rgba(255,255,255, 0.5);
+  border-radius: 5px;
+  width: 80%;
+
+}
+/*image animation*/
+
+.myphoto {
+  border-radius: 20px;
+  border: 5px solid #555;
+  right: 0px;
+  position: absolute;
+}
+.container .image{
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  right: 10px;
+  position: absolute;
+
+}
+.container .image .myphoto {
+  position: relative;
+  overflow: hidden;
+}
+.container .image .myphoto img {
+  max-width: 100%;
+  transition: transform 2s;
+}
+.container .image:hover .myphoto:hover img{
+  transform: scale(1.2);
+}
+
+img {
+  transition: 0.25s ease-in-out;
+}
+.image{
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width:1024px){
+  .container{
+    column-count: 1;
+  }
+}
+@media screen and (max-with:425px){
+  .container{
+    column-count: 1;
+  }
+}
+/*   image animation ends    */
+
+.wholebody {
+  background-color: #c0c0c0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+.button {
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: rgba(164,177,169, 0);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.button:focus{
+  border: none;
+  outline: none;
+}
+/* DOESN'T WORK
+.button:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+
+}
+.button:hover::before {
+  height: 180%;
+}
+*/
+nav {
+
+  background: ;
+  width: 100%;
+}
+
+label.logo {
+  color:  rgb(116,147,136);
+  font-size: 35px;
+  line-height: 50px;
+  padding: 0 10px;
+  padding-bottom: 0px;
+  font-weight: bold;
+  position: relative;
+  margin: 40px 0px;
+}
+label.logo::before {
+content: '';
+position: absolute;
+width: 100px;
+height: 3px;
+background-color: rgb(116,147,136);
+bottom: 0px;
+left: 50%;
+transform: translateX(-50%);
+animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  0%{
+    width: 100px;
+  }
+  50%{
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+  }
+
+nav ul {
+  margin-right: 20px;
+  width: 100%;
+}
+
+nav ul li {
+  padding-bottom: 0px;
+  display: inline-block;
+  line-height: 100px;
+
+  margin: 0 5px;
+
+}
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.navbar.active, .navbar:hover {
+  background: rgb(116,147,136);
+  opacity: 0.5
+  transition: 0.5s;
+
+}
+
+.wrapper{
+  position: absolute;
+    white-space: nowrap ;
+}
+.section {
+  width: 100%;
+  height: 300vh;
+  background: url(arrow.png) no-repeat;
+  background-size: cover;
+}
+.top {
+  position: fixed;
+  width: 60px;
+
+}
+/* go to the top button for both pages*/
+.section {
+  width: 100%;
+  height: 300vh;
+  background-size: 50px;
+}
+.gotopbutton {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: url(images/arrow.png) no-repeat;
+  background-size: 50px;
+  border-radius: 45px;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*    page 2    */
+
+.socialmedia {
+  width: 50px;
+  border-radius: 90px;
+  background-color: rgba(255,255,255,0.5);
+  background-size: 50px;
+  padding: 20px;
+}
+.loc {
+  background-color: rgb(255,255,255,0.5);
+}
